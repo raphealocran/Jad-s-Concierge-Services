@@ -5,17 +5,24 @@ on:
     branches: [ main ]
 
 jobs:
-  deploy:
+  pages:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/setup-pages@v3
 
       - name: Prepare site directory
         run: |
           rm -rf site || true
           mkdir site
-          rsync -av --exclude='.git' --exclude='.github' --exclude='node_modules' --exclude='*.yml' ./ site/
+          cp -R ./* site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
