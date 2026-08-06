@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jad's Concierge Services</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Font (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav class="container navbar">
+    <a class="logo" href="#">Jad's Concierge Services<span>.</span></a>
+    <ul class="nav-links" id="site-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#delivery">Delivery</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <i class="bi bi-search" aria-hidden="true"></i>
+      <i class="bi bi-person" aria-hidden="true"></i>
+      <i class="bi bi-bag" aria-hidden="true"></i>
+      <button class="hamburger" id="hamburgerIcon" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container" id="main-content">
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Shop globally <br /><i>receive locally</i></h1>
+        <p>fashion, wigs & general goods in one place.
+Jad’s Concierge Services (JCS) connects you to fashion, premium human hair wigs, kitchenware, beauty, gadgets and more with clear delivery timelines and secure MoMo & card payments.</p>
+        <a href="https://www.instagram.com/jad.scloset2?igsh=eWVoZHIxdmJod2Fx&utm_source=qr" class="btn-primary">Shop collection</a>
+      </div>
+      <div class="hero-visual">
+        <img src="images/hero.png" alt="Decorative background" class="hero-bg" loading="lazy" />
+        <div class="hero-badge">Luxury essentials</div>
+      </div>
+    </section>
+
+    <!-- ===== DELIVERY TIMELINES ===== -->
+    <div class="features" id="delivery">
+      <div class="feature-item"><i class="bi bi-truck"></i> <h4>Fastest</h4>24-48 hour <p>For items JCS physically stocks in Ghana. These appear in the “Fast Delivery” section and are updated daily.</p></div>
+      <div class="feature-item"><i class="bi bi-arrow-repeat"></i><h4>International fashion & retail</h4>7-20 days <p>Items sourced from international fashion and retail apps. Perfect for trendy pieces and curated finds.</p></div>
+      <div class="feature-item"><i class="bi bi-shield-check"></i><h4>International bulk imports</h4>40-45 days <p>Bulk and special‑order items imported internationally. Longer wait, bigger savings.</p></div>
+      <div class="feature-item"><i class="bi bi-headset"></i> 24/7 support <p>Our dedicated support team is available around the clock to assist you with any questions or concerns.</p></div>
+    </div>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="categories">
+      <h2 class="section-title">shop by category</h2>
+      <div class="category-grid">
+        <div class="category-card"><i class="bi bi-bag"></i><h4>Gerenal goods</h4></div>
+        <div class="category-card"><i class="bi bi-hair"></i><h4>premium human hair wigs</h4></div>
+        <div class="category-card"><i class="bi bi-spa"></i><h4>Beauty & Skincare</h4></div>
+        <div class="category-card"><i class="bi bi-cup-straw"></i><h4>Kitchen & Home</h4></div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS (dynamic) ===== -->
+    <section class="products" id="productsSection">
+      <h2 class="section-title">trending now</h2>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card">
+          <img src="images/img1.jpeg" alt="Classic hoodie" loading="lazy" />
+          <div class="product-info">
+            <h4>Luxe 2-Piece Short Set</h4>
+            <div class="price">300gh</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="images/img2.jpeg" alt="Oversized tee" loading="lazy" />
+          <div class="product-info">
+            <h4>Dress</h4>
+            <div class="price">300gh</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="images/img3.jpeg" alt="Cargo pants" loading="lazy" />
+          <div class="product-info">
+            <h4>Asymmetric Scarf Top and Wide Leg Pants</h4>
+            <div class="price">270gh</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="images/img12.jpeg" alt="Bomber jacket" loading="lazy" />
+          <div class="product-info">
+            <h4>Portofino Pant Set</h4>
+            <div class="price">280gh</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== INSTAGRAM ===== -->
+    <section class="instagram" id="gallery">
+      <h2 class="section-title">@Jad’s instagram</h2>
+      <div class="insta-grid">
+        <div class="insta-item"><img src="images/img4.jpeg" alt="Jad's Instagram post 1" loading="lazy" /></div>
+        <div class="insta-item"><img src="images/img5.jpeg" alt="Jad's Instagram post 2" loading="lazy" /></div>
+        <div class="insta-item"><img src="images/img6.jpeg" alt="Jad's Instagram post 3" loading="lazy" /></div>
+        <div class="insta-item"><img src="images/img7.jpeg" alt="Jad's Instagram post 4" loading="lazy" /></div>
+        <div class="insta-item"><img src="images/img8.jpeg" alt="Jad's Instagram post 5" loading="lazy" /></div>
+        <div class="insta-item"><img src="images/img9.jpeg" alt="Jad's Instagram post 6" loading="lazy" /></div>
+        <div class="insta-item"><img src="images/img10.jpeg" alt="Jad's Instagram post 7" loading="lazy" /></div>
+        <div class="insta-item"><img src="images/img11.jpeg" alt="Jad's Instagram post 8" loading="lazy" /></div>
+      </div>
+    </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="footer" aria-label="Site footer">
+    <div class="footer-shell">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3 class="footer-title">Jad's Concierge Services (JCS)</h3>
+          <p class="footer-description">Fashion, wigs &amp; general goods with clear delivery timelines and secure payments.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Shop</h3>
+          <nav class="footer-nav" aria-label="Shop links">
+            <ul>
+              <li><a class="footer-link" href="#"><i class="bi bi-bag"></i>Jad's Closet (Fashion)</a></li>
+              <li><a class="footer-link" href="#"><i class="bi bi-box-seam"></i>General Goods</a></li>
+              <li><a class="footer-link" href="#"><i class="bi bi-truck"></i>Fast Delivery (24–48 hrs)</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Support</h3>
+          <nav class="footer-nav" aria-label="Support links">
+            <ul>
+              <li><a class="footer-link" href="#"><i class="bi bi-clock-history"></i>Delivery &amp; Timelines</a></li>
+              <li><a class="footer-link" href="#"><i class="bi bi-info-circle"></i>About JCS</a></li>
+              <li><a class="footer-link" href="https://wa.me/message/GBX7J3GF7AMNG1"><i class="bi bi-whatsapp"></i>WhatsApp Us</a></li>
+              <li><a class="footer-link" href="#"><i class="bi bi-telephone"></i>+233 20 124 5747</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Connect with Us</h3>
+          <nav class="footer-nav" aria-label="Social links">
+            <ul>
+              <li><a class="footer-link" href="https://www.instagram.com/jad.scloset2?igsh=eWVoZHIxdmJod2Fx&utm_source=qr" target="_blank" rel="noreferrer"><i class="bi bi-instagram"></i>Instagram — @jadscloset</a></li>
+              <li><a class="footer-link" href="https://www.tiktok.com/@jad.scloset?_r=1&_t=ZS-98aRPZwNrGO" target="_blank" rel="noreferrer"><i class="bi bi-tiktok"></i>TikTok — @jadscloset</a></li>
+              <li><a class="footer-link" href="https://rb.gy/gic8yw" target="_blank" rel="noreferrer"><i class="bi bi-facebook"></i>Facebook — @jadscloset</a></li>
+              <li><a class="footer-link" href="https://x.com/jadsservices?s=11" target="_blank" rel="noreferrer"><i class="bi bi-twitter-x"></i>X (Twitter) — @jadscloset</a></li>
+              <li><a class="footer-link" href="https://shorturl.at/Elzz2" target="_blank" rel="noreferrer"><i class="bi bi-snapchat"></i>Snapchat — @jadscloset</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Jad's Concierge Services. All rights reserved.</p>
+        <p class="footer-note">Built with love from Ghana to the world.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a').forEach((link) => {
+        link.setAttribute('target', '_blank');
+        const rel = link.getAttribute('rel') || '';
+        const relTokens = new Set(rel.split(/\s+/).filter(Boolean));
+        relTokens.add('noopener');
+        relTokens.add('noreferrer');
+        link.setAttribute('rel', Array.from(relTokens).join(' '));
+      });
+    });
+  </script>
+  <script src="scripts.js"></script>
+</body>
+</html>
